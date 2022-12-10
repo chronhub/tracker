@@ -15,7 +15,7 @@ trait ProvideTracking
      */
     protected array $listeners = [];
 
-    public function detachFrom(MessageTracker $tracker): void
+    public function detachFromReporter(MessageTracker $tracker): void
     {
         foreach ($this->listeners as $listener) {
             $tracker->forget($listener);
@@ -25,7 +25,7 @@ trait ProvideTracking
     }
 
     /**
-     * Subscribe to reporter tracker on dispatch event
+     * Subscribe to reporter on dispatch event
      * and add listener to the untrack array
      */
     protected function onDispatchEvent(MessageTracker $tracker, callable $story, int $priority): void
@@ -34,7 +34,7 @@ trait ProvideTracking
     }
 
     /**
-     * Subscribe to reporter tracker on finalize event
+     * Subscribe to reporter on finalize event
      * and add listener to the untrack array
      */
     protected function onFinalizeEvent(MessageTracker $tracker, callable $story, int $priority): void
