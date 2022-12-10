@@ -1,0 +1,48 @@
+{
+  "name": "chronhub/tracker",
+  "description": "message and event tracker",
+  "keywords": [
+    "tracker"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "steph bug",
+      "email": "chronhubgit@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^8.1",
+    "chronhub/contracts": "dev-main"
+  },
+  "require-dev": {
+    "chronhub/message": "dev-main",
+    "react/promise": "^2.9",
+    "laravel/pint": "^0.2",
+    "nunomaduro/larastan": "^2.1",
+    "phpspec/prophecy-phpunit": "dev-master",
+    "phpunit/phpunit": "^9.5",
+    "roave/security-advisories": "dev-latest"
+  },
+  "autoload": {
+    "psr-4": {
+      "Chronhub\\Tracker\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Chronhub\\Tracker\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "pint": "vendor/bin/pint"
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "minimum-stability": "dev"
+}
