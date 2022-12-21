@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Chronhub\Tracker\Tests\Unit;
 
+use Chronhub\Testing\UnitTestCase;
 use Chronhub\Tracker\GenericListener;
 use Chronhub\Contracts\Tracker\Listener;
-use Chronhub\Tracker\Tests\UnitTestCase;
 
 final class GenericListenerTest extends UnitTestCase
 {

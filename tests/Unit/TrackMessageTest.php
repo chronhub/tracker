@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Chronhub\Tracker\Tests\Unit;
 
 use Chronhub\Tracker\Draft;
+use Chronhub\Testing\UnitTestCase;
 use Chronhub\Tracker\TrackMessage;
-use Chronhub\Tracker\Tests\UnitTestCase;
 
 final class TrackMessageTest extends UnitTestCase
 {

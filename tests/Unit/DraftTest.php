@@ -7,8 +7,8 @@ namespace Chronhub\Tracker\Tests\Unit;
 use stdClass;
 use RuntimeException;
 use Chronhub\Tracker\Draft;
+use Chronhub\Testing\UnitTestCase;
 use React\Promise\PromiseInterface;
-use Chronhub\Tracker\Tests\UnitTestCase;
 use function iterator_to_array;
 
 final class DraftTest extends UnitTestCase

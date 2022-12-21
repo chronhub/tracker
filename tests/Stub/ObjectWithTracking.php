@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Chronhub\Tracker\Tests\Stub;
 
 use Chronhub\Tracker\ProvideTracking;
+use Chronhub\Contracts\Tracker\Listener;
 use Chronhub\Contracts\Tracker\MessageTracker;
 
 final class ObjectWithTracking

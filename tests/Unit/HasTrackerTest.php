@@ -6,9 +6,9 @@ namespace Chronhub\Tracker\Tests\Unit;
 
 use Chronhub\Tracker\Draft;
 use Chronhub\Message\Message;
-use Chronhub\Tracker\Tests\UnitTestCase;
+use Chronhub\Testing\UnitTestCase;
 use Chronhub\Contracts\Tracker\MessageStory;
-use Chronhub\Tracker\Tests\Double\SomeCommand;
+use Chronhub\Testing\Double\Message\SomeCommand;
 use Chronhub\Tracker\Tests\Stub\ObjectWithTracker;
 
 final class HasTrackerTest extends UnitTestCase
