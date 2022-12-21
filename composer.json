@@ -1,8 +1,8 @@
 {
   "name": "chronhub/tracker",
-  "description": "message and event tracker",
+  "description": "Dispatch message and domain",
   "keywords": [
-    "tracker"
+    "tracker", "listener"
   ],
   "license": "MIT",
   "authors": [
@@ -13,11 +13,12 @@
   ],
   "require": {
     "php": "^8.1",
-    "chronhub/contracts": "dev-main"
+    "chronhub/contracts": "dev-main",
+    "chronhub/message": "dev-main",
+    "react/promise": "^2.9"
   },
   "require-dev": {
-    "chronhub/message": "dev-main",
-    "react/promise": "^2.9",
+    "chronhub/testing": "dev-main",
     "laravel/pint": "^0.2",
     "nunomaduro/larastan": "^2.1",
     "phpspec/prophecy-phpunit": "dev-master",
